@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav Bar</title>
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .display-none{
+        /* display:none; */
+         height:0px;
+        overflow:hidden; */
+    }
+    .display-show{
+        height:10rem;
+        display:block;
+    }
+</style>
+<body>
+    <section>
+        <div class="navbar bg-base-100">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">My Responsive NavBar</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Blog</a></li>
+      <li class="section-class">
+        <details>
+          <summary>
+            About Us 
+          </summary>
+          <ul id="list-containers" class="p-2 bg-base-100 rounded-t-none display-none">
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>
+    </section>
+    <script src="nav.js"></script>
+</body>
+</html>
